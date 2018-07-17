@@ -112,6 +112,8 @@ The following metricsets are available:
 
 * <<metricbeat-metricset-mongodb-metrics,metrics>>
 
+* <<metricbeat-metricset-mongodb-oplog,oplog>>
+
 * <<metricbeat-metricset-mongodb-status,status>>
 
 include::mongodb/collstats.asciidoc[]
@@ -119,6 +121,8 @@ include::mongodb/collstats.asciidoc[]
 include::mongodb/dbstats.asciidoc[]
 
 include::mongodb/metrics.asciidoc[]
+
+include::mongodb/oplog.asciidoc[]
 
 include::mongodb/status.asciidoc[]
 
