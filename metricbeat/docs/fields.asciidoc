@@ -9530,6 +9530,7 @@ format: bytes
 --
 
 [float]
+<<<<<<< HEAD
 == metrics fields
 
 Statistics that reflect the current use and state of a running `mongod` instance for more information, take a look at https://docs.mongodb.com/manual/reference/command/serverStatus/#serverstatus.metrics
@@ -10372,10 +10373,27 @@ type: long
 --
 
 *`mongodb.metrics.replication.preload.indexes.time.ms`*::
+=======
+== oplog fields
+
+oplog provides an overview of replication status, which is retrieved from db.getReplicationInfo().
+
+
+
+*`mongodb.oplog.size`*::
++
+--
+type: gorup
+
+--
+
+*`mongodb.oplog.first.timestamp`*::
+>>>>>>> dev/add-oplog-metricset
 +
 --
 type: long
 
+<<<<<<< HEAD
 --
 
 
@@ -10387,10 +10405,19 @@ type: long
 --
 
 *`mongodb.metrics.storage.free_list.search.requests`*::
+=======
+Timestamp of the first (i.e. earliest) operation in the oplog
+
+
+--
+
+*`mongodb.oplog.last.timestamp`*::
+>>>>>>> dev/add-oplog-metricset
 +
 --
 type: long
 
+<<<<<<< HEAD
 --
 
 *`mongodb.metrics.storage.free_list.search.scanned`*::
@@ -10402,16 +10429,29 @@ type: long
 
 
 *`mongodb.metrics.ttl.deleted_documents`*::
+=======
+Timestamp of the last (i.e. latest) operation in the oplog
+
+
+--
+
+*`mongodb.oplog.window`*::
+>>>>>>> dev/add-oplog-metricset
 +
 --
 type: long
 
+<<<<<<< HEAD
 --
 
 *`mongodb.metrics.ttl.passes`*::
 +
 --
 type: long
+=======
+The difference between the first and last operation in the oplog.
+
+>>>>>>> dev/add-oplog-metricset
 
 --
 

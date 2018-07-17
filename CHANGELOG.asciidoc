@@ -308,6 +308,7 @@ https://github.com/elastic/beats/compare/v6.2.3...master[Check the HEAD diff]
 - Add Elasticsearch index recovery metricset. {pull}7225[7225]
 - Add `locks`, `global_locks`, `oplatencies` and `process` fields to `status` metricset of MongoDB module
 - Add `metrics` metricset to MongoDB module {pull}7611[7611]
+- Add `oplog` metricset to MongoDB module {pull}7604[7604]
 
 *Packetbeat*
 
